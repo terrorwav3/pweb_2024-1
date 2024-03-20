@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Datos Usuario</h1>
+    <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: large;";>Rellena tu CV</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="name"><b>Nombres:</b></label>
+        <div>
+            <input type="text" name="name" id="name" />
+        </div>
+        <br>
+
+        <label for="apellido"><b>Apellidos:</b></label>
+        <div>
+            <input type="text" name="apellido" id="apellido" />
+        </div>
+        <br>
+
+        <label for="contrasena"><b>Contraseña:</b></label>
+        <div>
+            <input type="password" name="contrasena" id="contrasena" />
+        </div>
+        <br>
+
+        <label for="conficontrasena"><b>Confirme su contraseña:</b></label>
+        <div>
+            <input type="password" name="conficontrasena" id="conficontrasena" />
+        </div>
+        <br>
+
+        <!--deslizador-->
+        <label for="identificacion"><b>Identificación:</b></label>
+        <div>
+            <select name="select">
+                <option value="1">-</option>
+                <option value="2">C.C</option>
+                <option value="3">T.I</option>
+                <option value="4">C.E</option>
+            </select>
+            <input type="number" name="numid" id="numid" />
+        </div>
+        <br>
+        <!--name = para seleccionar una sola opcion-->
+        <label for="Sexo"><b>Sexo:</b></label>
+        <div>
+            <input type="radio" name="sexo" id="femenino" />
+            <label for="femenino">Femenino</label>
+
+            <br>
+            <input type="radio" name="sexo" id="masculino" />
+            <label for="masculino">Masculino</label>
+
+            <br>
+            <input type="radio" name="sexo" id="inter" />
+            <label for="inter">Intersexual</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="foto">Incluir foto</label>
+            <br>
+            <input type="file" name="foto" id="foto" />
+
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" name="categoria" id="est" />
+            <label for="est">Estudiante</label>
+        </div>
+        <br>
+
+        <div>
+            <fieldset>
+                <legend><b>Datos de contacto:</b></legend>
+                <label for="departamento">Departamento:</label>
+                <div>
+                    <select name="select">
+                        <option value="">-</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Antioquia">Antioquia</option>
+                        <option value="Arauca">Arauca</option>
+                        <option value="Atlantico">Atlántico</option>
+                        <option value="Bogota">Bogotá</option>
+                        <option value="Bolívar">Bolivar</option>
+                        <option value="Boyaca">Boyacá</option>
+                        <option value="Caldas">Caldas</option>
+                        <option value="Caqueta">Caquetá</option>
+                        <option value="Casanare">Casanare/option>
+                        <option value="Cauca">Cauca</option>
+                        <option value="Cesar">Cesar</option>
+                        <option value="Choco">Medellín</option>
+                        <option value="Cordoba">Córdoba</option>
+                        <option value="Cundinamarca">Cundinamarca</option>
+                        <option value="Guainia">Guainía</option>
+                        <option value="Guaviare">Guaviare</option>
+                        <option value="Huila">Huila</option>
+                        <option value="La Guajira">La Guajira</option>
+                        <option value="Magdalena">Magdalena</option>
+                        <option value="Meta">Meta</option>
+                        <option value="Narino">Nariño</option>
+                        <option value="Norte de Santander">Norte de Santander</option>
+                        <option value="Putumayo">Putumayo</option>
+                        <option value="Quindio">Quindío</option>
+                        <option value="Risaralda">Risaralda</option>
+                        <option value="San Andres y Providencia">San Andrés y Providencia</option>
+                        <option value="Santander">Santander</option>
+                        <option value="Sucre">Sucre</option>
+                        <option value="Tolima">Tolima</option>
+                        <option value="Valle del Cauca">Valle del Cauca</del></option>
+                        <option value="Vaupes">Vaupes</option>
+                        <option value="Vichada">Vichada</option>
+                    </select>
+                </div>
+                <br>
+                <label for="Fecha">Fecha de Nacimiento:</label>
+                <div>
+                    <input type="number" id="dia" name="dia" min="1" max="31">
+                    de <select name="select">
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="Sep">Sep</option>
+                        <option value="oct">Oct</option>
+                        <option value="nov">Nov</option>
+                        <option value="Dic">Dic</option>
+                    </select>
+                    de <input type="number" name="ano" value="">
+                </div>
+                <br>
+                <label for="temas">Temas de interés</label>
+                    <select id="temas">
+                        <option value="admin">Administracion de bases de datos</option>
+                        <option value="analisis">Analisis y programacion</option>
+                        <option value="arq">Arquitectura</option>
+                        <option value="calidad">Calidad</option>
+                        <option value="crp">CRP,CRM,Business Intelligence</option>
+                        <option value="ia">Inteligencia artificial</option>
+                    </select>
+            </fieldset>
+        </div>
+        <br>
+        <button type="button" name="button" onclick="location.href='lista.html'"> Guardar cambios </button>
+        <button type="reset">Borrar los datos introducidos</button>
+
+    </form>
+
+</body>
+
+
+</body>
+</html>
