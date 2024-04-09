@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro autos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="carrcss.css">
+</head>
+
+<body>
+  <div class="all">
+    <div class="header">
+      <h1 style="font-size: 30px; text-align: center;"><b>Rellene el formulario</b></h1>
+    </div>
+
+    <div class="container">
+
+      <form action=https://www.runt.gov.co/ method="POST" enctype="multipart/form-data">
+
+        <label for="tc"><b>Tipo de usuario</b></label>
+        <div class="input-container">
+          <select name="tipo_usuario" style="width: 100%;">
+            <option value="-">-</option>
+            <option value="Cliente">Cliente</option>
+            <option value="Cliente_vip">Cliente VIP</option>
+            <option value="Vendedor">Vendedor</option>
+          </select>
+        </div>
+        <br>
+
+
+        <label for="np"><b>País</b></label>
+        <div class="input-container">
+          <select id="pais" name="pais" style="width: 100%;">
+            <option value="-">-</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="El Salvador">El Salvador</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Honduras">Honduras</option>
+            <option value="México">México</option>
+            <option value="Nicaragua">Nicaragua</option>
+            <option value="Panamá">Panamá</option>
+            <option value="Paraguay">Paraguay</option>
+            <option value="Perú">Perú</option>
+            <option value="República Dominicana">República Dominicana</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Venezuela">Venezuela</option>
+          </select>
+        </div>
+        <br>
+
+
+        <label for="tc"><b>Tipo de coche</b></label>
+        <div class="input-container">
+          <select id="tipo_carro" name="tipo_carro" style="width: 100%;">
+            <option value="-">-</option>
+            <option value="Sedan">Sedán</option>
+            <option value="Coupe">Coupé</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Convertible">Convertible</option>
+            <option value="SUV">SUV</option>
+            <option value="Minivan">Minivan</option>
+            <option value="Camioneta">Camioneta</option>
+            <option value="Deportivo">Deportivo</option>
+            <option value="Familiar">Familiar</option>
+          </select>
+        </div>
+        <br>
+
+
+        <label for="mc"><b>Marca</b></label>
+        <div class="input-container">
+          <select id="marca_carro" name="marca_carro" style="width: 100%;">
+            <option value="-">-</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Renault">Renault</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Audi">Audi</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Aston Martin">Aston Martin</option>
+            <option value="Bentley">Bentley</option>
+            <option value="Bugatti">Bugatti</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Maserati">Maserati</option>
+            <option value="McLaren">McLaren</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Rolls-Royce">Rolls-Royce</option>
+            <option value="Maybach">Maybach</option>
+          </select>
+        </div>
+        <br>
+
+        <label for="estado_carro"><b>Estado de coche</b></label>
+        <div class="input-container">
+          <select id="estado_carro" name="estado_carro" style="width: 100%;">
+            <option value="-">-</option>
+            <option value="Nuevo">Nuevo</option>
+            <option value="Usado">Usado</option>
+            <option value="Reacondicionado">Reacondicionado</option>
+            <option value="Antiguo">Antiguo</option>
+          </select>
+        </div>
+        <br>
+
+
+        <label for="tipo_combustible"><b>Tipo de combustible</b></label>
+        <div class="input-container">
+          <select id="tipo_combustible" name="tipo_combustible" style="width: 100%;">
+            <option value="-">-</option>
+            <option value="Gasolina">Gasolina</option>
+            <option value="Diésel">Diésel</option>
+            <option value="Gas Natural">Gas Natural</option>
+            <option value="Etanol (Alcohol)">Etanol (Alcohol)</option>
+            <option value="Biocombustible">Biocombustible</option>
+            <option value="Híbrido">Híbrido</option>
+            <option value="Eléctrico">Eléctrico</option>
+          </select>
+        </div>
+        <br>
+
+        <label for="fp"><b>Fecha de publicación</b></label>
+        <div class="input-container">
+          <input type="date" id="calendario" name="calendario" style="width: 90%;">
+        </div>
+        <br>
+
+        <label for="tp"><b>Tipo de moneda</b></label>
+        <div class="input-container">
+          <select id="tipo_moneda" name="tipo_moneda" style="width: 100%;">
+            <option value="-">-</option>
+            <option value="ARS">Peso argentino (ARS)</option>
+            <option value="BOB">Peso boliviano (BOB)</option>
+            <option value="BRL">Real brasileño (BRL)</option>
+            <option value="CLP">Peso chileno (CLP)</option>
+            <option value="COP">Peso colombiano (COP)</option>
+            <option value="CRC">Colón costarricense (CRC)</option>
+            <option value="CUP">Peso cubano (CUP)</option>
+            <option value="USD">Dólar estadounidense (USD)</option>
+            <option value="GTQ">Quetzal guatemalteco (GTQ)</option>
+            <option value="HNL">Lempira hondureño (HNL)</option>
+            <option value="MXN">Peso mexicano (MXN)</option>
+            <option value="NIO">Córdoba nicaragüense (NIO)</option>
+            <option value="PAB">Balboa panameño (PAB)</option>
+            <option value="PYG">Guaraní paraguayo (PYG)</option>
+            <option value="PEN">Sol peruano (PEN)</option>
+            <option value="DOP">Peso dominicano (DOP)</option>
+            <option value="UYU">Peso uruguayo (UYU)</option>
+            <option value="VES">Bolívar venezolano (VES)</option>
+          </select>
+        </div>
+        <br>
+
+        <label for="precio"><b>Precio de coche</b></label>
+        <div class="input-container">
+          <input type="text" id="precio" name="precio" step="any" style="width: 90%;">
+        </div>
+        <br>
+
+        <label for="sc"><b>Seguro de coche</b></label>
+        <div class="input-container">
+          <select id="seguro_carro" name="seguro_carro" style="width: 100%;">
+            <option value="-">-</option>
+            <option value="Sí">Sí</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <br>
+
+        <label for="mc"><b>Modelo de carro</b></label>
+        <div class="input-container">
+          <select id="modelo_carro" name="modelo_carro" style="width: 100%;">
+            <option value="-">-</option>
+            <option value="Corolla">Corolla</option>
+            <option value="Camry">Camry</option>
+            <option value="Escape">Escape</option>
+            <option value="Focus">Focus</option>
+            <option value="Civil">Civil</option>
+            <option value="Accord">Accord</option>
+            <option value="Camaro">Camaro</option>
+            <option value="Suburban">Suburban</option>
+            <option value="Kwid">Kwid</option>
+            <option value="Sandero">Sandero</option>
+            <option value="Logan">Logan</option>
+            <option value="Sentra">Sentra</option>
+            <option value="Versa">Versa</option>
+            <option value="Tiguan">Tiguan</option>
+            <option value="488">488</option>
+            <option value="Ghibli">Ghibli</option>
+            <option value="72OS">72OS</option>
+            <option value="911">911</option>
+            <option value="Phantom">Phantom</option>
+            <option value="GLS">GLS</option>
+            <option value="Aventador">Aventador</option>
+          </select>
+        </div>
+        <br>
+
+
+        <label for="a"><b>Año</b></label>
+        <div class="input-container">
+          <input type="number" id="anio" name="anio" min="1900" max="2100" style="width: 90%;">
+        </div>
+        <br>
+
+        <label for="detalle"><b>Detalle</b></label>
+        <div class="input-container">
+          <input type="text" id="detalle" name="detalle" style="width: 90%;">
+        </div>
+        <br>
+
+        <label for="motor"><b>Motor</b></label>
+        <div class="input-container">
+          <input type="text" id="motor" name="motor" style="width: 90%;">
+        </div>
+        <br>
+
+        <label for="caja"><b>Caja</b></label>
+        <div class="input-container">
+          <input type="text" id="caja" name="caja" style="width: 90%;">
+        </div>
+        <br>
+
+        <label for="descrip1"><b>Descripción 1</b></label>
+        <div class="input-container">
+          <input type="text" id="descrip1" name="descrip1" style="width: 90%; height:50px;">
+        </div>
+        <br>
+
+        <label for="descrip2"><b>Descripción 2</b></label>
+        <div class="input-container">
+          <input type="text" id="descrip2" name="descrip2" style="width: 90%; height:50px;">
+        </div>
+        <br>
+
+        <label for="descrip3"><b>Descripción 3</b></label>
+        <div class="input-container">
+          <input type="text" id="descrip3" name="descrip3" style="width: 90%; height:50px;">
+        </div>
+        <br>
+
+        <input type="submit" value="Enviar" class="boton1">
+        <button type="reset" class="boton1">Resetear</button>
+    </div>
+
+    </form>
+  </div>
+
+
+</body>
+
+</html>
