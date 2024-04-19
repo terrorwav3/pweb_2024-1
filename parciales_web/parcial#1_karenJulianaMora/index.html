@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de afiliación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-**" crossorigin="anonymous" />
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="title_1">
+            <p style="display: flex; justify-content: center; align-items: center; margin: 0;"><b>Web</b>Developer</p>
+        </div>
+
+        <form class="form_1">
+            <p style="display: flex; justify-content: center; align-items: center; margin: 0;">Formulario de afiliación
+            </p><br>
+
+            <div class="campo_nombre">
+                <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                <span class="icon"><i class="fas fa-user"></i></span>
+            </div><br><br>
+            <div class="campo_email">
+                <input type="email" id="email" name="email" placeholder="Email " required>
+                <span class="icon"><i class="far fa-envelope"></i></span>
+            </div><br><br>
+
+            <div class="campo_telefono">
+                <input type="tel" id="telefono" name="telefono" inputmode="numeric"
+                    placeholder="Teléfono" required>
+                <span class="icon"><i class="fas fa-phone"></i></span>
+            </div><br><br>
+
+            <div id="formulario" class="campo_gustos">
+                <div class="gustos_input">
+                    <input type="text" id="nuevoGusto" name="gustos" placeholder="Gustos" required>
+                    <button type="button" onclick="agregarGusto()" id="agregarBtn">Gustos</button>
+                </div>
+            </div>
+            
+
+            <div id="gustos">
+                <h2></h2>
+                <table id="tablaGustos">
+                    <thead>
+                        <tr>
+                            <th>Gusto</th>
+                            <th>Porcentaje</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                        <!-- Aquí se mostrarán los gustos agregados -->
+                    </tbody>
+                </table>
+
+                <div id="contenedorBotones" style="display: none;">
+                    <button onclick="cancelarEdicion()">Cancelar</button>
+                    <button onclick="eliminarGusto()">Eliminar</button>
+                </div>              
+            </div>
+
+
+        </form>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>

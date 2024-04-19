@@ -1,0 +1,172 @@
+body {
+  background-color: rgb(232, 236, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.title_1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 40px;
+  font-style: static;
+  color: black;
+  height: 60px;
+}
+
+/* Posición del icono */
+.campo_nombre,
+.campo_email,
+.campo_telefono,
+.campo_gustos {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+input {
+  padding: 10px 40px 10px 10px;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 300px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  font-size: 18px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
+input:focus+label,
+input:not(:placeholder-shown)+label {
+  top: -20px;
+  font-size: 12px;
+  color: #888;
+}
+
+#gustos::placeholder,
+#name::placeholder,
+#email::placeholder,
+#telefono::placeholder {
+  color: #999;
+  font-size: 18px;
+}
+
+.form {
+  font-style: italic;
+  font-size: 14px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 40px;
+  font-style: regular 400;
+  height: 60px;
+}
+
+#gustoInput {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.input-section {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.input-section input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.campo_gustos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gustos_input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 355px;
+  
+}
+
+.campo_gustos input {
+  flex: 1;
+}
+
+.input-with-button {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#formulario,
+#gustos {
+  margin-bottom: 20px;
+}
+
+#formulario input[type="text"],
+#formulario input[type="number"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#formulario button {
+  background-color: rgb(127, 185, 127);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: -87px;
+  padding: 15px 20px 13px 18px;
+  /* Ajuste el valor de padding */
+  border: 3px solid rgb(127, 185, 127);
+  border-radius: 4px;
+}
+
+#tablaGustos {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tablaGustos th,
+#tablaGustos td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#tablaGustos th {
+  background-color: #f2f2f2;
+}
+
+#tablaGustos tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tablaGustos tr:hover {
+  background-color: #ddd;
+}
