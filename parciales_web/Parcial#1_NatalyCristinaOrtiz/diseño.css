@@ -1,0 +1,118 @@
+
+.abs-center {
+    width: 400px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    background-color: #e8ecef  ;
+}
+
+body {
+    background-color: #e8ecef; /* Cambia el valor hexadecimal a tu color preferido */
+    margin: 0;
+    padding: 0;
+}
+
+.titulos {
+    text-align: center;
+    font: Arial; 
+    color: #969b9d; 
+    
+}
+
+.form {
+  width: 450px;
+  max-height:fit-content;
+}
+
+.form-control input{
+    width: 100%;
+    padding: 12px;
+}
+
+.form-control{
+    font-family: "Arial"; font-weight: 200; content: "\f007";
+
+}
+
+.titleh3{
+    margin-left: 450px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.titulos{
+    font-size: small;
+}
+
+.label-as-placeholder {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: green;
+    pointer-events: none;
+    border: 1px solid green;
+    padding: 4px 8px;
+}
+
+    /* Estilos para el botón en estado normal */
+button#gustosButton {
+        background-color: transparent;
+        color: green;
+        border: 1px solid green;
+        padding: 5px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+}
+
+    /* Estilos para el botón al pasar el cursor */
+button#gustosButton:hover {
+        background-color: green;
+        color: white;
+}
+
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  
+  th,
+  td {
+    padding: 5px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto */
+  }
+
+  #gustoButton {
+    transition: background-color 0.3s ease-in-out;
+}
+
+#gustoButton:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-cell {
+    pointer-events: none;
+}
+
+.table-responsive {
+    max-width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #e9ecef;
+}
+
+.edit-mode .edit-cell {
+    background-color: #f1f1f1; /* Color de fondo cuando se está editando */
+}
