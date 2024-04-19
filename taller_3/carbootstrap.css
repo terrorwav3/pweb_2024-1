@@ -1,0 +1,17 @@
+
+h1{
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+font-style: Medium;
+color:blueviolet;
+}
+
+.form-select{
+    margin: 0;
+
+    padding: 8px 5px;
+    /* Ajusta según sea necesario */
+    border-radius: 11px;
+
+}
+
