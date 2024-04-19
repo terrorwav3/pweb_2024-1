@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Pagina de afiliacion">
+    <link rel="stylesheet" href="diseño.css">
+    
+    <title>Parcial Web</title>
+    
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Parcial PW</title>
+    <script>
+        $(document).ready(function(){
+            // Add new row
+            $("#gustoButton").click(function(){
+                var gusto = $("#gustosForm").val();  
+                var porcentage = 0;
+                $(".table tbody tr").last().after(
+                    '<tr class="fadetext">'+
+                        '<td>'+gusto+'</td>'+
+                        '<td>'+porcentage+'</td>'+
+                        '<td><button class="edit-btn">Editar</button></td>'+
+                    '</tr>'
+                );
+            }); 
+        //Editar fila
+        $(".table").on("click", ".edit-btn", function(){
+            var $row = $(this).closest("tr");
+            var $columns = $row.find("td");
+
+        // Reemplazar los td por inputs editables
+        $columns.each(function(){
+            if($(this).index() < 3) {
+                $(this).html('<input type="text" value="' + $(this).text() + '">');
+            }
+        });
+
+        $(this).text("Guardar"); // Cambiar texto del botón a "Guardar"
+        $(this).toggleClass("edit-btn save-btn"); // Cambiar clase del botón
+        $row.append('<td><button class="accept-btn">Aceptar</button><button class="cancel-btn">Cancelar</button></td>');
+    });
+    
+    // Guardar edición en fila
+    $(".table").on("click", ".save-btn", function(){
+        var $row = $(this).closest("tr");
+        var $columns = $row.find("td");
+
+        // Cambiar inputs a texto y actualizar valores
+        $columns.each(function(){
+            if($(this).index() < 3) {
+                var text = $(this).find("input").val();
+                $(this).html(text);
+            }
+            $(this).closest("tr").find(".accept-btn, .cancel-btn").remove();  
+        });
+
+        $(".table").on("click", ".cancel-btn", function() {
+        var $row = $(this).closest("tr");
+        var $columns = $row.find("td");
+        
+    });
+      // Convertir inputs a texto y restaurar valores originales
+      $columns.each(function() {
+            if ($(this).index() < 3) {
+                var text = $(this).find("input").val();
+                $(this).html(text);
+            }
+        });
+
+        $row.find(".save-btn").text("Editar"); // Restaurar texto del botón a "Editar"
+        $row.find(".save-btn").toggleClass("edit-btn save-btn"); // Restaurar clase del botón
+
+        // Eliminar botones Aceptar y Cancelar al cancelar la edición
+        $row.find(".accept-btn, .cancel-btn").remove();
+    });
+        })
+
+        
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3 class="titleh3">WebDeveloper</h3>
+        <div class="row abs-center">
+            
+                <div class="form-group col-lg-12" id="formulario">
+                    <h4 class="titulos">Formulario de afiliación</h4>
+                    <input type="text" id="nombreFrom" class="form-control" placeholder="Nombre Completo" name="name"><br>
+                    <input type="email" id="emailForm" class="form-control" placeholder="Email" name="mail"><br>
+                    <input type="number" id="numberForm" class="form-control" placeholder="Telefono" name="number"><br>
+                    <div style="position: relative;">
+                        <div class="container">
+                            <div class="form-div">
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="text" id="gustosForm" class="form-control" placeholder="" name="gustos" style="padding-right: 100px;">
+                                        </div>
+                                        <div class="col-md-3" style="text-align: right;">
+                                            <button id="gustoButton" for="gustosForm" style="position: absolute; top: -38px; right: -240px; margin-top: 150;" class="btn btn-outline-success">Gustos</button>                      
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Gusto</th>
+                                            <th>%</th>
+                                            <th>editar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                    
+                            </div>
+                        </div>
+                    
+                        
+                    
+                   <!--- <a href="index.html">
+                        <button type="button" class="btn btn-danger">Cancelar</button>
+                    </a> > --> 
+                    
+                </div>
+            </div>
+           
+            </form>
+            
+        </div>
+    
+
+        <!-- </div>
+    <button type="submit" class="btn btn-success">Enviar Datos</button>
+    <div class="row"> -->
+        
+
+
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+    <!--  Plugin DynamicTable -->
+    <script src="plugins/dynamicTable/jquery.dynamicTable-1.0.0.js"></script>
+    <script src="codigo.js"></script>
+    
+</body>
+
+</html>
