@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Serif', serif;
 }
 
-.field {
+.field{
     background-color: #fce4ec; /* Color de fondo rosado */
     padding: 0.5rem; /* Añade espacio interno */
     border-radius: 0.25rem; /* Borde redondeado */
