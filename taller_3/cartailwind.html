@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Autos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cartailwind.css">
+</head>
+
+<body class="bg-pink-100 p-4">
+    <div class="max-w-2xl mx-auto bg-white shadow-lg rounded p-6">
+        <div class="text-center mb-6">
+            <h1 class="text-2xl font-bold bg-pink-300 p-2 text-white"><b>Rellene el formulario</b></h1>
+        </div>
+
+        <form action="https://www.runt.gov.co/" method="POST" enctype="multipart/form-data">
+            <!-- Contenedor para centrar campos -->
+            <div class="mx-auto max-w-lg">
+                <!-- Tipo de usuario -->
+                <div class="mb-6 text-left">
+                    <label for="tipo_usuario" class="font-bold label-margin">Tipo de usuario</label>
+                    <select name="tipo_usuario" class="w-full border field">
+                        <option value="-">-</option>
+                        <option value="Cliente">Cliente</option>
+                        <option value="Cliente VIP">Cliente VIP</option>
+                        <option value="Vendedor">Vendedor</option>
+                    </select>
+                </div>
+
+                <!-- País -->
+                <div class="mb-6 text-left">
+                    <label for="pais" class="font-bold label-margin">País</label>
+                    <select name="pais" class="w-full border field">
+                        <option value="-">-</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="México">México</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Panamá">Panamá</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Perú">Perú</option>
+                        <option value="República Dominicana">República Dominicana</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+                </div>
+
+                <!-- Tipo de coche -->
+                <div class="mb-6 text-left">
+                    <label for="tipo_carro" class="font-bold label-margin">Tipo de coche</label>
+                    <select name="tipo_carro" class="w-full border field">
+                        <option value="-">-</option>
+                        <option value="Sedán">Sedán</option>
+                        <option value="Coupé">Coupé</option>
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="Convertible">Convertible</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Minivan">Minivan</option>
+                        <option value="Camioneta">Camioneta</option>
+                        <option value="Deportivo">Deportivo</option>
+                        <option value="Familiar">Familiar</option>
+                    </select>
+                </div>
+
+                <!-- Marca -->
+                <div class="mb-6 text-left">
+                    <label for="marca_carro" class="font-bold label-margin">Marca</label>
+                    <select name="marca_carro" class="w-full border field">
+                        <option value="-">-</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Renault">Renault</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Aston Martin">Aston Martin</option>
+                        <option value="Bentley">Bentley</option>
+                        <option value="Bugatti">Bugatti</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Lamborghini">Lamborghini</option>
+                        <option value="Maserati">Maserati</option>
+                        <option value="McLaren">McLaren</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Rolls-Royce">Rolls-Royce</option>
+                        <option value="Maybach">Maybach</option>
+                    </select>
+                </div>
+
+                <!-- Estado del coche -->
+                <div class="mb-6 text-left">
+                    <label for="estado_carro" class="font-bold label-margin">Estado del coche</label>
+                    <select name="estado_carro" class="w-full border field">
+                        <option value="-">-</option>
+                        <option value="Nuevo">Nuevo</option>
+                        <option value="Usado">Usado</option>
+                        <option value="Reacondicionado">Reacondicionado</option>
+                        <option value="Antiguo">Antiguo</option>
+                    </select>
+                </div>
+
+                <!-- Tipo de combustible -->
+                <div class="mb-6 text-left">
+                    <label for="tipo_combustible" class="font-bold label-margin">Tipo de combustible</label>
+                    <select name="tipo_combustible" class="w-full border field">
+                        <option value="-">-</option>
+                        <option value="Gasolina">Gasolina</option>
+                        <option value="Diésel">Diésel</option>
+                        <option value="Gas Natural">Gas Natural</option>
+                        <option value="Etanol (Alcohol)">Etanol</option>
+                        <option value="Híbrido">Híbrido</option>
+                        <option value="Eléctrico">Eléctrico</option>
+                    </select>
+                </div>
+
+                <!-- Fecha de publicación -->
+                <div class="mb-6 text-left">
+                    <label for="calendario" class="font-bold label-margin">Fecha de publicación</label>
+                    <input type="date" name="calendario" class="w-full border field text-left">
+                </div>
+
+                <!-- Año -->
+                <div class="mb-6 text-left">
+                    <label for="año" class="font-bold label-margin">Año del coche</label>
+                    <input type="number" name="anio" min="1900" max="2100" class="w-full border field text-left">
+                </div>
+
+                <!-- Detalle del coche -->
+                <div class="mb-6 text-left">
+                    <label for="detalle" class="font-bold label-margin">Detalle del coche</label>
+                    <input type="text" name="detalle" class="w-full border field text-left">
+                </div>
+
+                <!-- Motor -->
+                <div class="mb-6 text-left">
+                    <label for="motor" class="font-bold label-margin">Motor</label>
+                    <input type="text" name="motor" class="w-full border field text-left">
+                </div>
+
+                <!-- Caja -->
+                <div class="mb-6 text-left">
+                    <label for="caja" class="font-bold label-margin">Caja</label>
+                    <input type="text" name="caja" class="w-full border field text-left">
+                </div>
+
+                <!-- Descripción 1 -->
+                <div class="mb-6 text-left">
+                    <label for="descrip1" class="font-bold label-margin">Descripción 1</label>
+                    <textarea name="descrip1" rows="3" class="w-full border field text-left"></textarea>
+                </div>
+
+                <!-- Descripción 2 -->
+                <div class="mb-6 text-left">
+                    <label for="descrip2" class="font-bold label-margin">Descripción 2</label>
+                    <textarea name="descrip2" rows="3" class="w-full border field text-left"></textarea>
+                </div>
+
+                <!-- Descripción 3 -->
+                <div class="mb-6 text-left">
+                    <label for="descrip3" class="font-bold label-margin">Descripción 3</label>
+                    <textarea name="descrip3" rows="3" class="w-full border field text-left"></textarea>
+                </div>
+
+                <!-- Botones de acción -->
+                <div class="text-left">
+                    <button type="reset" class="bg-pink-300 px-4 py-2 rounded text-white hover:bg-pink-600 transition shadow-xl shadow-pink-500/60">Reestablecer</button>
+                    <button type="submit" class="bg-pink-300 px-4 py-2 rounded text-white hover:bg-pink-600 transition shadow-xl shadow-pink-500/60">Enviar</button>
+                </div>
+            </div> <!-- Fin del contenedor centrado -->
+        </form>
+    </div>
+</div>
+</body>
+</html>

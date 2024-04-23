@@ -1,0 +1,12 @@
+body {
+    font-family: 'Noto Serif', serif;
+}
+
+.field {
+    background-color: #fce4ec; /* Color de fondo rosado */
+    padding: 0.5rem; /* Añade espacio interno */
+    border-radius: 0.25rem; /* Borde redondeado */
+}
+.label-margin {
+    margin-bottom: 0.5rem; /* Espacio entre label y campo */
+}
