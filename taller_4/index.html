@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Autos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <body style="background-color: rgb(99, 122, 76);">
+        <div class="max-w-2xl mx-auto bg-rgb-168-210-140 shadow-lg rounded p-6">
+            <div class="text-center mb-6">
+                <h1 class="text-2xl font-bold bg-rgb-109-149-89 p-2 text-white"><b>Rellene el formulario</b></h1>
+            </div>
+
+            <form action="https://www.runt.gov.co/" method="POST" enctype="multipart/form-data">
+                <!-- Contenedor para centrar campos -->
+                <div class="mx-auto max-w-lg bg-rgb-168-210-140 p-4">
+                    <!-- Campos -->
+
+                    <div class="mb-6 text-left">
+                        <label for="name" class="font-bold label-margin">Nombre</label>
+                        <input type="text" name="name" class="w-full border field text-left" maxlength="25"
+                            id="nameInput" placeholder="Ingrese su nombre">
+                        <span id="nameError" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div class="mb-6 text-left">
+                        <label for="apellido" class="font-bold label-margin">Apellido</label>
+                        <input type="text" name="apellido" class="w-full border field text-left" maxlength="25"
+                            id="apellidoInput" placeholder="Ingrese su apellido">
+                        <span id="apellidoError" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div class="mb-6 text-left">
+                        <label for="name" direccion="font-bold label-margin"><b>Dirección</b></label>
+                        <input type="text" name="direccion" class="w-full border field text-left" id="direccionInput"
+                            placeholder="Ingrese su dirección">
+                        <span id="direccionError" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div class="mb-6 text-left">
+                        <label for="usuario" class="font-bold label-margin">Usuario</label>
+                        <input type="text" name="usuario" class="w-full border field text-left" id="usuarioInput"
+                            placeholder="Ingrese su usuario">
+                        <span id="usuarioError" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div class="mb-6 text-left">
+                        <label for="contrasena" class="font-bold">Contraseña</label>
+                        <input type="password" name="contrasena" class="w-full border field text-left"
+                            id="contrasenaInput" placeholder="Ingrese su contraseña">
+                        <span id="contrasenaError" class="text-red-500 text-sm"></span>
+                        <!-- Espacio para mensaje de error -->
+                    </div>
+
+                    <div class="mb-6 text-left">
+                        <label for="confirmar_contrasena" class="font-bold">Confirmar Contraseña</label>
+                        <input type="password" name="confirmar_contrasena" class="w-full border field text-left"
+                            id="confirmarContrasenaInput" placeholder="Confirme su contraseña">
+                        <span id="confirmarContrasenaError" class="text-red-500 text-sm"></span>
+                        <!-- Espacio para mensaje de error -->
+                    </div>
+
+                    <div class="mb-6 text-left">
+                        <label for="email" class="font-bold label-margin"><b>Email</b></label>
+                        <input type="email" name="email" class="w-full border field text-left" id="emailInput"
+                            maxlength="120" placeholder="Ingrese su email">
+                        <span id="emailError" class="text-red-500 text-sm"></span>
+                    </div>
+
+                    <div class="mb-6 text-left">
+                        <label for="telefono" class="font-bold label-margin">Teléfono</label>
+                        <input type="text" name="telefono" class="w-full border field text-left"
+                            placeholder="Ingrese su teléfono">
+                    </div>
+
+                    <div class="mb-6 text-left">
+                        <label class="font-bold">¿Desea registrar sus gustos?</label>
+                        <input type="radio" name="registrar_gustos" id="si" value="si"> Sí
+                        <input type="radio" name="registrar_gustos" id="no" value="no" checked> No
+                    </div>
+
+                    <div id="seccionGustos" class="hidden"> <!-- Sección inicialmente oculta -->
+                        <div class="mb-6 text-left">
+                            <label for="colorFavorito" class="font-bold label-margin">Color favorito</label>
+                            <input type="text" id="colorFavorito" class="w-full border field text-left"
+                                placeholder="Ingrese su color favorito">
+                        </div>
+
+                        <div class="mb-6 text-left">
+                            <label for="marcaFavorita" class="font-bold label-margin">Marca de carro favorita</label>
+                            <input type="text" id="marcaFavorita" class="w-full border field text-left "
+                                placeholder="Ingrese su marca favorita">
+                        </div>
+
+                        <div class="mb-6 text-left">
+                            <label for="estiloFavorito" class="font-bold label-margin">Estilo de carro favorito</label>
+                            <input type="text" id="estiloFavorito" class="w-full border field text-left"
+                                placeholder="Ingrese su estilo favorito">
+                        </div>
+
+                        <div class="mb-6 text-left">
+                            <label for="modeloFavorito" class="font-bold label-margin">Modelo de carro favorito</label>
+                            <input type="text" id="modeloFavorito" class="w-full border field text-left"
+                                placeholder="Ingrese su modelo favorito">
+                        </div>
+
+                        <div class="mb-6 text-left">
+                            <label for="rangoPrecio" class="font-bold label-margin">Rango de precio en pesos colombianos
+                                que estaría dispuesto a
+                                gastar en un vehículo</label>
+                            <input type="range" id="rangoPrecio" min="20000000" max="180000000" step="1000"
+                                onchange="mostrarValor()">
+                            <span id="rangoPrecioValor"></span> <!-- Para mostrar el valor actual -->
+                        </div>
+
+                        <script>
+                            function mostrarValor() {
+                                var rango = document.getElementById('rangoPrecio').value;
+                                document.getElementById('rangoPrecioValor').innerText = 'COP ' + rango;
+                            }
+                        </script>
+                    </div>
+                    <!-- Botones de acción -->
+                    <div class="text-left">
+                        <button type="reset"
+                            class="bg-rgb-109-149-89 px-4 py-2 rounded text-white hover:bg-lime-800 transition shadow-xl shadow-lime-700">Reestablecer</button>
+                        <button type="submit"
+                            class="bg-rgb-109-149-89 px-4 py-2 rounded text-white hover:bg-lime-800 transition shadow-xl shadow-lime-700">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="index.js"></script>
+
+    </body>
+
+</html>

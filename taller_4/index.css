@@ -1,0 +1,42 @@
+.field {
+    background-color: rgb(223, 239, 216);
+    /* Color de fondo rosado */
+    padding: 0.5rem;
+    /* Añade espacio interno */
+    border-radius: 0.25rem;
+    /* Borde redondeado */
+}
+
+.bg-rgb-168-210-140 {
+    background-color: rgb(196, 223, 180);
+}
+
+.bg-rgb-109-149-89 {
+    background-color: rgb(109, 149, 89);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+}
+
+.bg-rgb-30-65-38 {
+    background-color: rgb(30, 65, 38);
+}
+
+.mb-6{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+}
+.label-margin {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 60px;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+    /* Espacio entre label y campo */
+}
+
+
+
