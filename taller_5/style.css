@@ -1,0 +1,200 @@
+body {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d3b0c5;
+    color: #000000;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Usamos flexbox para el espaciado */
+    justify-content: center; /* Centrar los elementos */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2em; /* Aumentamos el margen entre los elementos */
+}
+
+nav ul li a {
+    color: #000000;
+    font-size: large;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+/* Formulario de registro de usuarios */
+#registro_usuarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Playfair Display", serif;
+}
+
+#registro_f {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    background-color: #ddcbdb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#registro_f label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#registro_f input,
+#registro_f select {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #3d4da7;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#registro_f button {
+    padding: 10px;
+    background-color: #a8b4ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#registro_f button:hover {
+    background-color: #919bb2;
+}
+
+#edad {
+    font-size: 14px;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+#detalles-enfermedades {
+    margin-top: 15px; /* Ajuste de margen superior */
+    margin-bottom: 15px;
+}
+
+#detalles-enfermedades label {
+    margin-bottom: 5px;
+}
+
+#detalles-enfermedades .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#detalles-enfermedades .checkbox-wrapper label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+#detalles-enfermedades input[type="checkbox"] {
+    display: none;
+}
+
+#detalles-enfermedades input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+#detalles-enfermedades input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #a8b4ce;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+#detalles-enfermedades input[type="checkbox"]:checked + label:before {
+    background-color: #a8b4ce;
+    border-color: #a8b4ce;
+}
+
+#detalles-enfermedades input[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Estilos de la tabla */
+#grilla_jQ {
+    font-family: "Playfair Display", serif;
+}
+
+#tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabla-datos th,
+#tabla-datos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tabla-datos th {
+    background-color: #a8b4ce;
+    text-align: left;
+}
+
+#filtro {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif; /* Aplicamos la fuente al cuadro de texto */
+}
+
+@media (max-width: 600px) {
+    #registro_f {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Estilos para las casillas de verificación de enfermedades contagiosas */
+#detalles-enfermedades .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#detalles-enfermedades input[type="checkbox"] {
+    display: none;
+}

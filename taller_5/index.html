@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="menu_inicio">Inicio</a></li>
+                <li><a href="#" id="menu_registro">Registro de usuarios</a></li>
+                <li><a href="#" id="menu_grilla">Grilla jQuery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1 style="color: #919bb2">¡Bienvenid@ al sitio web!</h1>
+            <div>
+                <img src="media/logoUIS.png" height="100" width="200">
+            </div>
+        </section>
+
+        <!-- Registro de usuarios -->
+        <section id="registro_usuarios" style="display:none;">
+            <h2 style="color: #919bb2">Registro de usuarios</h2>
+            <form id="registro_f">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <br>
+
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <span id="edad"></span>
+                <br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <br>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <br>
+
+                <label for="confir_contrasena">Confirmar contraseña:</label>
+                <input type="password" id="confir_contrasena" name="confir_contrasena" required>
+                <br>
+
+                <label for="enfermedades">¿Ha sufrido de enfermedades?</label>
+                <select id="enfermedades" name="enfermedades" required>
+                    <option value="no">No</option>
+                    <option value="si">Sí</option>
+                </select>
+
+                <div id="detalles-enfermedades" style="display: none;">
+                    <label for="enfermedades-contagiosas">Enfermedades Contagiosas:</label>
+                    <br></br>
+                    <div id="enfermedades-contagiosas">
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="varicela" name="enfermedades[]" value="Varicela">
+                            <label for="varicela">Varicela</label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="sarampion" name="enfermedades[]" value="Sarampión">
+                            <label for="sarampion">Sarampión</label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="tuberculosis" name="enfermedades[]" value="Tuberculosis">
+                            <label for="tuberculosis">Tuberculosis</label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="covid19" name="enfermedades[]" value="COVID-19">
+                            <label for="covid19">COVID-19</label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="hepatitis" name="enfermedades[]" value="Hepatitis">
+                            <label for="hepatitis">Hepatitis</label>
+                        </div>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="vih_sida" name="enfermedades[]" value="VIH_SIDA">
+                            <label for="vih_sida">VIH/SIDA</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+        <!-- Grilla jQuery -->
+        <section id="grilla_jQ" style="display:none;">
+            <h2 style="color: #919bb2">Grilla en jQuery</h2>
+            <input type="text" id="filtro" placeholder="Filtrar por..." style="font-family: 'Playfair Display';">
+            <table id="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Company</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos cargados del json -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
