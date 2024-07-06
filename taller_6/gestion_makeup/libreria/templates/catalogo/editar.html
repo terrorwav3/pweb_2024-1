@@ -1,0 +1,19 @@
+{%  extends "base.html" %}
+
+{% block titulo %}  Editar nuevo producto {% endblock %} 
+    
+{% block contenido  %} 
+
+<div class="card_imagenes">
+    <div class="card-header_imagenes">Editar información de un producto</div>
+    <div class="card-body_imagenes">
+        <h4 class="card-title_imagenes">Datos del producto</h4>
+        {% include 'catalogo/form.html' %}
+    </div>
+    <div class="card-footer text-muted">
+
+    </div>
+
+</div>
+
+{% endblock %} 

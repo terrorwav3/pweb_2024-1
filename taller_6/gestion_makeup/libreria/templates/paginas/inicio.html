@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}Inicio{% endblock %}
+
+{% block contenido %}
+<div class="background-image">
+    <div class="p-5 mb-4 bg-light rounded-3 text-center border-black"> <!-- Agregado text-center para centrar el contenido -->
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold"><b>¡Bienvenida a XIX Cosmetics!</b></h1> <!-- Agregado <i> para cursiva -->
+            <p class="col-md-8 fs-4 mx-auto">Aquí encontrarás una variedad de productos de nuestras 4 marcas principales. Súmate a la diversión y haz parte de 
+                nuestro equipo. <br>Inicia sesión como administradora para añadir productos.</p>
+        
+            <a name="" id="" class="btn btn-outline-dark rounded-pill custom-btn" href="{% url 'login' %}"
+                role="button"><b>Iniciar</b></a>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="card mx-auto"> <!-- Agregado mx-auto para centrar horizontalmente -->
+                    <img src="{% static '/media/alexander-krivitskiy-8gGUMSQQz0E-unsplash.jpg' %}" class="card-img-top"
+                        alt="Imagen 1">
+                    <div class="card-body">
+                        <p class="card-text" style="color: white;">DIOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card mx-auto"> <!-- Agregado mx-auto para centrar horizontalmente -->
+                    <img src="{% static '/media/istockphoto-1292414100-170667a.webp' %}" class="card-img-top"
+                        alt="Imagen 2">
+                    <div class="card-body">
+                        <p class="card-text" style="color: white;">RHODE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card mx-auto"> <!-- Agregado mx-auto para centrar horizontalmente -->
+                    <img src="{% static '/media/shayan-rostami-sxNPBx1GSHI-unsplash.jpg' %}" class="card-img-top"
+                        alt="Imagen 3">
+                    <div class="card-body">
+                        <p class="card-text" style="color: white;">RARE BEAUTY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card mx-auto"> <!-- Agregado mx-auto para centrar horizontalmente -->
+                    <img src="{% static '/media/c13206581eddbe68988706ad8a7c9db1.jpg' %}" class="card-img-top"
+                        alt="Imagen 4">
+                    <div class="card-body">
+                        <p class="card-text" style="color: white;">FENTY BEAUTY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
