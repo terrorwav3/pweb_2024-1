@@ -1,0 +1,12 @@
+body {
+    font-family: 'Noto Serif', serif;
+}
+
+.field{
+    background-color: #e59bf4; 
+    padding: 0.5rem; 
+    border-radius: 0.25rem; 
+}
+.label-margin {
+    margin-bottom: 0.5rem; 
+}

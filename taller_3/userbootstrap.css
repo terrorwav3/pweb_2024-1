@@ -1,0 +1,53 @@
+body {
+    padding-top: 30px;
+    margin: 0;
+    background-color: rgb(203, 181, 232);
+  }
+  
+  .form-container {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+    /* Ajusta el ancho máximo del formulario */
+    padding: 20px;
+    /* Añade padding para separar el contenido del borde */
+    background-color: #b19dd6;
+    /* Color de fondo claro */
+    border: 5px solid #5751b5;
+    /* Borde del formulario */
+    border-radius: 10px;
+    /* Borde redondeado */
+    height: auto;
+  }
+  
+  .input-container{
+    margin-bottom: 0.5rem;
+  }
+  
+  h1 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.877);
+  }
+  
+  /* Cambiar el color del texto cuando el botón está en modo hover */
+  .btn-outline-primary {
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+    border-color: rgb(0, 0, 0);
+    /* Color del borde */
+    color: rgb(98, 5, 184);
+    /* Color del texto */
+  }
+  
+  /* Si también quieres un efecto de cambio de fondo al hacer clic, puedes agregar esto */
+  .btn-outline-primary:hover {
+    background-color: rgba(165, 106, 224, 0.877);
+    border-color: rgb(132, 72, 189);
+    /* Color del borde */
+    color: rgb(255, 255, 255);
+  }

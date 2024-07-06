@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(163, 61, 146);
+}
+
+h1,
+div {
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+    font-style: italic;
+    color: rgb(89, 12, 101);
+}
+
+.all {
+    max-width: 400px;
+    /* Ancho máximo del contenido */
+    height: auto;
+    margin: 0 auto;
+    /* Centrar el contenido horizontalmente */
+    padding: 20px;
+    /* Espaciado interno */
+    border: 7px solid rgb(103, 19, 103);
+    /* Borde sólido */
+    background-color: rgb(210, 161, 214);
+    border-radius: 10px;
+    /* Bordes redondeados */
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+}
+
+.container,
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container input[type="text"],
+.input-container input[type="number"],
+.input-container select {
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+    padding: 8px 5px;
+    /* Ajusta según sea necesario */
+    border: 7px solid rgb(187, 95, 198);
+    border-radius: 11px;
+    background-color: 7px solid rgb(214, 179, 218);
+    color: rgb(35, 3, 26);
+    /* Ajusta según sea necesario */
+}
+
+.boton1 {
+    background-color: rgb(146, 12, 117);
+    font-family: 'Noto Serif', serif;
+    font-weight: 300;
+    font-style: italic;
+    border: none;
+    color: rgb(241, 202, 231);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(194, 131, 180, 0.3), 0 6px 20px 0 rgba(194, 131, 180, 0.3);
+}
