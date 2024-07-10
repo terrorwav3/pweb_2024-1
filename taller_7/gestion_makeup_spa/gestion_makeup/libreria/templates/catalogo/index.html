@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block titulo %} Lista de productos {% endblock %}
+
+{% block contenido %}
+
+<div class="card_imagenes">
+    <div class="card-header_imagenes">
+        <div style="display: flex; justify-content: space-between; align-items: right;">
+            <a name="" id="" class="btn btn-outline-dark rounded-pill custom-btn" href="{% url 'crear' %}" role="button">Agregar nuevo producto</a>
+        </div>
+    </br>
+    </div>
+    <div class="card-body_imagenes">
+        <h4 class="card-title_imagenes">Productos</h4>
+        <div class="row row-cols-2">
+            {% for producto in productos %}
+            <div class="col mb-4">
+                <div class="card_imagenes">
+                    <img src="{{ producto.imagen.url }}" class="card-img producto-img" alt="{{ producto.nombre }}">
+                    <div class="card-body_imagenes">
+                        <h5 class="card-title_imagenes">{{ producto.nombre }}</h5>
+                        <p class="card-text">{{ producto.descripcion }}</p>
+                        <a href="{% url 'editar' producto.id %}" class="btn btn-outline-dark btn_catalogo mr-5">Editar</a>
+                        <a href="{% url 'eliminar' producto.id %}" class="btn btn-outline-dark btn_catalogo">Eliminar</a>                        
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="card-footer text-muted">Footer</div>
+</div>
+
+{% endblock %}
+
+<style>
+    .producto-img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la proporción */
+    }
+</style>

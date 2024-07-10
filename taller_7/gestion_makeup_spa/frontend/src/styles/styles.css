@@ -1,0 +1,33 @@
+/* src/styles/styles.css */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    max-width: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto; /* Mantén la proporción de la imagen */
+    border-radius: 8px; /* Aplica un borde redondeado a la imagen */
+  }
+  
